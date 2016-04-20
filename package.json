@@ -14,7 +14,7 @@
     "morgan": "~1.6.1",
     "socket.io": "latest",
     "fs": "latest",
-    "ffmpeg": "latest",
+    "hls-ffmpeg": "latest",
     "serve-favicon": "~2.3.0"
   }
 }
