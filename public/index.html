@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>My first Three.js app</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="/javascripts/html2canvas.js"></script>
+    <script src="/javascripts/jquery.plugin.html2canvas.js"></script>
     <script src="https://rawgithub.com/mrdoob/three.js/master/build/three.js"></script>
     <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
 
-<canvas id="canvas" width="500" height="1000"></canvas>
-<div id="html" style="width: 500px; height: 1000px">
+<!--<canvas id="canvas" width="250" height="500"></canvas>-->
+<div id="html" style="width: 250px; height: 500px">
     <div class="perspective">
         <div class="tardis-wrap">
             <div class="tardis">
@@ -182,7 +184,45 @@
     </div>
 </div>
 
+
+<div>
+    <input type="button" id="btnCapture" value="Capture" />
+    <!--<input type="button" id="btnDisplay" value="View Image" />-->
+</div>
+
+
 <script>
+    $(document).ready(function () {
+        $('#btnCapture').on("click", function () {
+            captureAndUpload();
+        });
+
+        /*$('#btnDisplay').on("click", function () {
+            captureAndDisplay();
+        });*/
+
+        function captureAndUpload() {
+            $('#html').html2canvas({
+                onrendered: function (canvas) {
+                //Set hidden field's value to image data (base-64 string)
+                    $('#capturedShot').val(canvas.toDataURL("image/png"));
+                    document.getElementById("form").submit();
+                }
+            });
+        }
+
+        /*function captureAndDisplay() {
+            $('body').html2canvas({
+                onrendered: function (canvas) {
+                    var myImage = canvas.toDataURL("image/png");
+                    window.open(myImage);
+                }
+            });
+        }*/
+    });
+</script>
+
+<!--<script>
 
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -210,7 +250,7 @@
     };
     img.src = url;
 
-</script>
+</script>-->
 
 </body>
 </html>
