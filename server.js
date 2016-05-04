@@ -22,7 +22,7 @@ io.sockets.on('connection', function (socket) {
         var buffer = new Buffer(data.file, 'base64');
         fs.writeFile(__dirname + '/tmp/frame' + data.frame + '.png', buffer.toString('binary'), 'binary');
 
-        var hf = require('hls-ffmpeg');
+        /*var hf = require('hls-ffmpeg');
         var json = {
             input: 'tmp/frame%d.png',
             format: '848x480',
@@ -30,6 +30,6 @@ io.sockets.on('connection', function (socket) {
         };
         hf.ffmpeg(json, function(err, data){
             console.log(err||data)
-        });
+        });*/
     });
 });

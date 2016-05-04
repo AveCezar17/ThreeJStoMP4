@@ -10,123 +10,205 @@
 </head>
 <body>
 
-<div class="col-lg-12 col-md-12 col-sm-12 header">
-
-    <nav class="navbar navbar-default navbar-inverse header-navbar navbar-fixed-top" role="navigation">
-        <div class="container-fluid container-header">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-            <div class="col-lg-2 col-md-2 col-sm-2">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed header-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand navbar-left logo" href="/"></a>
-
+<canvas id="canvas" width="500" height="1000"></canvas>
+<div id="html" style="width: 500px; height: 1000px">
+    <div class="perspective">
+        <div class="tardis-wrap">
+            <div class="tardis">
+                <!-- start of side -->
+                <div class="side">
+                    <div class="top-sign">
+                        <div class="text">
+                            <span class="left">POLICE</span>
+                            <span class="tiny">PUBLIC CALL</span>
+                            <span class="right">BOX</span>
+                        </div>
+                    </div>
+                    <div class="door-frame">
+                        <div class="door door-left">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="sign"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                        <div class="door door-right">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- end of side -->
+
+                <!-- start of side -->
+                <div class="side">
+                    <div class="top-sign">
+                        <div class="text">
+                            <span class="left">POLICE</span>
+                            <span class="tiny">PUBLIC CALL</span>
+                            <span class="right">BOX</span>
+                        </div>
+                    </div>
+                    <div class="door-frame">
+                        <div class="door door-left">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                        <div class="door door-right">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of side -->
+
+                <!-- start of side -->
+                <div class="side">
+                    <div class="top-sign">
+                        <div class="text">
+                            <span class="left">POLICE</span>
+                            <span class="tiny">PUBLIC CALL</span>
+                            <span class="right">BOX</span>
+                        </div>
+                    </div>
+                    <div class="door-frame">
+                        <div class="door door-left">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                        <div class="door door-right">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of side -->
+
+                <!-- start of side -->
+                <div class="side">
+                    <div class="top-sign">
+                        <div class="text">
+                            <span class="left">POLICE</span>
+                            <span class="tiny">PUBLIC CALL</span>
+                            <span class="right">BOX</span>
+                        </div>
+                    </div>
+                    <div class="door-frame">
+                        <div class="door door-left">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                        <div class="door door-right">
+                            <div class="door-inset"></div>
+                            <div class="door-inset b"></div>
+                            <div class="door-inset c"></div>
+                            <div class="window">
+                                <div class="pane a"></div><div class="pane b"></div><div class="pane c"></div>
+                                <div class="pane d"></div><div class="pane e"></div><div class="pane f"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of side -->
+
+                <div class="roof"></div>
+
+
+                <div class="roof-top">
+                    <div class="roof-panel a"></div>
+                    <div class="roof-panel b"></div>
+                    <div class="roof-panel c"></div>
+                    <div class="roof-panel d"></div>
+                    <div class="top-lid"></div>
+                </div>
+
+
+                <div class="light">
+                    <div class="light-panel a"><div class="bottom"></div><div class="top"></div></div>
+                    <div class="light-panel b"><div class="bottom"></div><div class="top"></div></div>
+                    <div class="light-panel c"><div class="bottom"></div><div class="top"></div></div>
+                    <div class="light-panel d"><div class="bottom"></div><div class="top"></div></div>
+                    <div class="light-lid"></div>
+                </div>
+
+
+                <!-- start of floor -->
+                <div class="floor">
+                    <div class="floor-panel a"></div>
+                    <div class="floor-panel b"></div>
+                    <div class="floor-panel c"></div>
+                    <div class="floor-panel d"></div>
+                    <div class="floor-lid"></div>
+                </div>
+                <!-- end of floor -->
+
 
             </div>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                <div class="col-lg-7 col-md-7 col-sm-7">
-
-                    <form class="navbar-form" role="search">
-
-                        <!-- Search Panel with filters -->
-
-                        <div class="input-group">
-                            <div class="input-group-btn search-panel">
-
-                                <a href="/filter" class="btn btn-default dropdown-toggle filter"><span id="search_concept">Расширенный поиск</span> <span class="caret"></span></a>
-
-                            </div>
-                            <input type="hidden" name="search_param" value="all" id="search_param">
-                            <input type="text" class="form-control" name="x" placeholder="Поиск" style="width: 460px;">
-              <span class="input-group-btn">
-                <button class="btn btn-default search-advance" type="button"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
-                        </div>
-
-                        <!-- Search Panel with filters -->
-
-                    </form>
-
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-3">
-
-                    <ul class="nav navbar-nav navbar-right two-buttons">
-
-                        <li class="dropdown favorites two-button">
-                            <a href="/fav" class="btn btn-primary center-block buttons"><span class="glyphicon glyphicon-star"></span> <strong>Избранное</strong> <span class="badge badge-info">4</span></a>
-                        </li>
-
-                        <li class="dropdown enter two-button">
-                            <a href="/auth" class="btn btn-primary center-block buttons"><span class="glyphicon glyphicon-user"></span> <strong>Войти</strong></a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
+    </div>
 </div>
 
 <script>
 
-    html2canvas(document.body, {
-        onrendered: function(canvas) {
-            document.body.appendChild(canvas);
-            console.log(canvas);
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
 
-            var socket = io.connect('http://localhost:3000');
-            var frame = 1;
-            var scene = new THREE.Scene();
-            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+    var data = "<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'>" +
+            "<foreignObject width='100%' height='100%'>" +
+            "<div xmlns='http://www.w3.org/1999/xhtml'>" +
 
-            var renderer = new THREE.WebGLRenderer();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            document.body.appendChild(canvas);
+            document.getElementById('html').innerHTML +
 
-            var geometry = new THREE.CubeGeometry(1,1,1);
-            var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
-            var cube = new THREE.Mesh(geometry, material);
-            scene.add(cube);
+            "</div>" +
+            "</foreignObject>" +
+            "</svg>";
 
-            camera.position.z = 5;
-
-            var render = function () {
-                requestAnimationFrame(render);
-
-                cube.rotation.x += 0.1;
-                cube.rotation.y += 0.1;
-
-                renderer.render(scene, camera);
-
-                if (cube.rotation.x < 3) {
-                    socket.emit('render-frame', {
-                        frame: frame++,
-                        file: document.querySelector('canvas').toDataURL()
-                    });
-                }
-
-            };
-
-            render();
-
-        }
+    var DOMURL = self.URL || self.webkitURL || self;
+    var img = new Image();
+    var svg = new Blob([data], {
+        type: "image/svg+xml;charset=utf-8"
     });
+
+    var url = DOMURL.createObjectURL(svg);
+    img.onload = function () {
+        ctx.drawImage(img, 0, 0);
+        DOMURL.revokeObjectURL(url);
+    };
+    img.src = url;
 
 </script>
 
